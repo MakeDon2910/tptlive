@@ -1,10 +1,11 @@
 <?php
-$url = 'http://rus.delfi.ee/'; 
+$url = 'https://tpt.siseveeb.ee/veebivormid/tunniplaan/tunniplaan?oppegrupp=200&nadal=27.11.2017'; 
 $file = file_get_contents($url);
-$pattern = '#<div class="col col-6.+?</div>#s';
+$pattern = '#<div class="btn-group.+?</div>#s';
 preg_match($pattern, $file, $matches);
 print_r($matches);
 ?>
+
 <head>
-  <meta http-equiv="refresh" content="20">
+ <meta http-equiv="refresh" content="10000">
 </head>
